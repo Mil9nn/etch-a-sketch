@@ -1,0 +1,35 @@
+#container {
+    width: 50vw;
+    height: 70vh;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+body {
+    text-align: center;
+    background-color: #f7f7f2;
+}
+
+.gridBox {
+    border: 1px solid black;
+}
+
+.btn {
+    margin: 30px 0px;
+    padding: 10px 20px;
+    border-radius: 16px;
+    background-color: #f45b69;
+    border: 2px solid #f45b69;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #c61524;
+    border: 2px solid #c61524;
+}
+
+.title {
+    font-size: 1.5rem;
+}
