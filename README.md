@@ -15,4 +15,4 @@ Check out the live demo of the project here: [Live Demo](https://mil9nn.github.i
 ### Technologies Used
     1. HTML
     2. CSS
-    3. JAVASCRIPTS
+    3. JAVASCRIPT
