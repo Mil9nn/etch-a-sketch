@@ -1,5 +1,8 @@
 # etch-a-sketch
 
+## Live Demo
+Check out the live demo of the project here: [Live Demo](https://mil9nn.github.io/etch-a-sketch/index.html)
+
 ## Description
  This is an interactive Etch-a-Sketch project. It allows users to draw on a grid by moving their mouse over the cells, mimicking the classic Etch-a-Sketch toy.
 
