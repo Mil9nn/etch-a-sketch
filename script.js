@@ -29,11 +29,21 @@ function createGrid(numberOfSquares) {
     });
 
     // Touch effect for smart phones 
+    let isThrottled = false;
+
     container.addEventListener("touchmove", function(event) {
-        if (event.target.classList.contains("gridBox")) {
-            event.target.style.backgroundColor = getRandomColor();
+        if (isThrottled) return;
+        isThrottled = true;
+
+        const touch = event.touches[0];
+        const target = document.elementFromPoint(touch.clientX, touch.clientY);
+        if (target && target.classList.contains("gridBox")) {
+            target.style.backgroundColor = getRandomColor();
         }
-    });
+
+    setTimeout(() => isThrottled = false, 50); // Adjust delay as needed
+});
+
 
     // Setting grid dimensions in CSS
     container.style.gridTemplateColumns = `repeat(${numberOfSquares}, 1fr)`;
