@@ -28,6 +28,13 @@ function createGrid(numberOfSquares) {
         }
     });
 
+    // Touch effect for smart phones 
+    container.addEventListener("touchmove", function(event) {
+        if (event.target.classList.contains("gridBox")) {
+            event.target.style.backgroundColor = getRandomColor();
+        }
+    });
+
     // Setting grid dimensions in CSS
     container.style.gridTemplateColumns = `repeat(${numberOfSquares}, 1fr)`;
     container.style.gridTemplateRows = `repeat(${numberOfSquares}, 1fr)`;
